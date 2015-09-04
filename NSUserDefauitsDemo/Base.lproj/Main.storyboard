@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NSUserDefauitsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0V-K3-fDK">
+                                <rect key="frame" x="16" y="63" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ipG-w7-m81">
+                                <rect key="frame" x="16" y="118" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="93l-Ga-uHy">
+                                <rect key="frame" x="16" y="162" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6mg-qu-U4j">
+                                <rect key="frame" x="16" y="205" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVa-vS-29Z">
+                                <rect key="frame" x="16" y="252" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL3-34-eEF">
+                                <rect key="frame" x="233" y="290" width="71" height="30"/>
+                                <state key="normal" title="Load Data">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadData" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fnz-UT-kV7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFW-dQ-1Cs">
+                                <rect key="frame" x="16" y="297" width="71" height="30"/>
+                                <state key="normal" title="Save Data">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveData" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KYz-rv-9XS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ipG-w7-m81" firstAttribute="leading" secondItem="j0V-K3-fDK" secondAttribute="leading" id="68o-tY-B4n"/>
+                            <constraint firstItem="93l-Ga-uHy" firstAttribute="trailing" secondItem="ipG-w7-m81" secondAttribute="trailing" id="6Uh-lo-God"/>
+                            <constraint firstItem="qVa-vS-29Z" firstAttribute="leading" secondItem="jFW-dQ-1Cs" secondAttribute="leading" id="Fpd-Bi-oud"/>
+                            <constraint firstItem="93l-Ga-uHy" firstAttribute="leading" secondItem="ipG-w7-m81" secondAttribute="leading" id="GRt-Tv-ebh"/>
+                            <constraint firstItem="6mg-qu-U4j" firstAttribute="leading" secondItem="qVa-vS-29Z" secondAttribute="leading" id="HGs-o2-K5P"/>
+                            <constraint firstItem="6mg-qu-U4j" firstAttribute="trailing" secondItem="93l-Ga-uHy" secondAttribute="trailing" id="OV2-Vb-xFd"/>
+                            <constraint firstItem="6mg-qu-U4j" firstAttribute="leading" secondItem="93l-Ga-uHy" secondAttribute="leading" id="OYy-Tz-izH"/>
+                            <constraint firstItem="j0V-K3-fDK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="43" id="Xmu-vY-OBN"/>
+                            <constraint firstItem="DL3-34-eEF" firstAttribute="trailing" secondItem="qVa-vS-29Z" secondAttribute="trailing" id="bHA-iy-mGV"/>
+                            <constraint firstItem="6mg-qu-U4j" firstAttribute="top" secondItem="93l-Ga-uHy" secondAttribute="bottom" constant="13" id="c0G-je-OZP"/>
+                            <constraint firstItem="ipG-w7-m81" firstAttribute="top" secondItem="j0V-K3-fDK" secondAttribute="bottom" constant="34" id="eRI-Fw-eI5"/>
+                            <constraint firstItem="DL3-34-eEF" firstAttribute="top" secondItem="qVa-vS-29Z" secondAttribute="bottom" constant="8" symbolic="YES" id="fuI-fl-KfQ"/>
+                            <constraint firstItem="ipG-w7-m81" firstAttribute="trailing" secondItem="j0V-K3-fDK" secondAttribute="trailing" id="h9G-re-Czt"/>
+                            <constraint firstItem="qVa-vS-29Z" firstAttribute="top" secondItem="6mg-qu-U4j" secondAttribute="bottom" constant="17" id="k9P-Zv-SmM"/>
+                            <constraint firstItem="93l-Ga-uHy" firstAttribute="top" secondItem="ipG-w7-m81" secondAttribute="bottom" constant="14" id="kTH-ph-czK"/>
+                            <constraint firstItem="qVa-vS-29Z" firstAttribute="trailing" secondItem="6mg-qu-U4j" secondAttribute="trailing" id="mL1-Kn-Fyn"/>
+                            <constraint firstItem="jFW-dQ-1Cs" firstAttribute="top" secondItem="qVa-vS-29Z" secondAttribute="bottom" constant="15" id="pOC-vD-Ptb"/>
+                            <constraint firstItem="j0V-K3-fDK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="rvU-tu-SZ3"/>
+                            <constraint firstItem="DL3-34-eEF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="z2U-pT-ifM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="contactNumber" destination="qVa-vS-29Z" id="bTc-1r-Rfj"/>
+                        <outlet property="emailtextField" destination="6mg-qu-U4j" id="wHE-xo-DXb"/>
+                        <outlet property="firstName" destination="ipG-w7-m81" id="dbE-at-9ec"/>
+                        <outlet property="lastField" destination="93l-Ga-uHy" id="3Zs-g8-ktt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="394" y="401"/>
+        </scene>
+    </scenes>
+</document>
